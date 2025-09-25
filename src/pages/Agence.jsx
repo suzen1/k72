@@ -3,22 +3,23 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React from 'react'
 import { useRef } from 'react'
+import MainBottum from '../components/agance/MainBottum'
 
 const Agence = () => {
 const imag =  useRef(null)
 gsap.registerPlugin(ScrollTrigger)
 useGSAP(function(){
   gsap.to(imag.current,{ 
-    scale:2,
-    x:100,
+    // scale:2,
+    // x:100,
 
    scrollTrigger:{
     trigger:imag.current,
-    markers:true,
+    // markers:true,
     start:"top 37%",
     end:"top -100%",
     scrub:1,
-    pin:true,
+    // pin:true,
    }
   })
 })
@@ -34,7 +35,10 @@ useGSAP(function(){
           TWO</h1>
       </div> 
       <div className='pl-[50%] font-[font500]'>
-        <p className='text-[5vh] leading-[5.5vh]  ' >&nbsp; We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
+        <p className='text-[5vh] leading-[5.5vh] ' >&nbsp; We’re inquisitive and open-minded, and we make sure creativity crowds out ego from every corner. A brand is a living thing, with values, a personality and a story. If we ignore that, we can achieve short-term success, but not influence that goes the distance. We bring that perspective to every brand story we help tell.</p>
+      </div>
+      <div>
+<MainBottum />
       </div>
       </div>
       <div className="section2">
