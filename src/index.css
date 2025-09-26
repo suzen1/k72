@@ -6,4 +6,27 @@
 @font-face {
     font-family: font500;
     src: url(../public/Fonts/Lausanne-500.woff2);
+} 
+
+.movelink{
+    opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+}
+.link:hover .movelink{
+    opacity: 1;
+
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* sirf half width shift hoga */
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 5s linear infinite;
 }
