@@ -8,21 +8,26 @@
     src: url(../public/Fonts/Lausanne-500.woff2);
 } 
 
-.movelink{
-    opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-}
-.link:hover .movelink{
-    opacity: 1;
+ .movelink{
+  top:-100%;
+  opacity: 0;
+      transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
 
 }
+.link:hover .movelink{
+  top:0;
+   opacity: 1;
+  
+
+} 
+
 
 @keyframes marquee {
   from {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-50%); /* sirf half width shift hoga */
+    transform: translateX(-50%); 
   }
 }
 

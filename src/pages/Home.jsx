@@ -6,10 +6,10 @@ import MomeHeroButtom from '../components/Home/MomeHeroButtom'
 const Home = () => {
   return (
     <div>
-        <div className="main w-full fixed  h-screen">
+        <div className="main w-full fixed  h-[105vh]">
 <Video/>
         </div>
-        <div className='w-full h-screen relative flex flex-col justify-between '>
+        <div className='w-full h-[100vh] relative flex flex-col justify-between '>
             <HomeHeroTop/>
             <MomeHeroButtom/>
         </div>
