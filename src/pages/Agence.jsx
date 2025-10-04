@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/all'
 import React from 'react'
 import { useRef } from 'react'
 import MainBottum from '../components/agance/MainBottum'
+import Funder from '../components/agance/Funder'
+import Team from '../components/agance/Team'
 
 const Agence = () => {
   const imag = useRef(null)
@@ -11,7 +13,7 @@ const Agence = () => {
   useGSAP(function () {
     gsap.to(imag.current, {
       // scale:2,
-      // x:100,
+      y:100,
 
       scrollTrigger: {
         trigger: imag.current,
@@ -19,10 +21,15 @@ const Agence = () => {
         start: "top 37%",
         end: "top -100%",
         scrub: 1,
-        // pin:true,
+        pin:true,
       }
     })
+
+
+    
   })
+
+
 
   return (
     <div>
@@ -41,9 +48,12 @@ const Agence = () => {
           <MainBottum />
         </div>
       </div>
-      <div className="section2">
-
-      </div>
+      <section className='Founder-CoFunder '>
+        <Funder/>
+      </section>
+      <section className='Team '>
+<Team/>
+      </section>
     </div>
   )
 }

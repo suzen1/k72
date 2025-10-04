@@ -32,7 +32,7 @@ useGSAP(()=>{
     scrollTrigger:{
       trigger:'.CardMain',
       start:'top 70%',
-      end:"top -120%",
+      end:"top -100%",
       scrub:1.2,
       markers:true,
       
